@@ -1,0 +1,257 @@
+/*================ GOOGLE FONTS ============== */
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+/*================ VARIABLE CSS ============== */
+:root {
+    /*============= FONT AND TYPOGRAPHY =============== */
+    --body-font: "Mitr", sans-serif;
+    --normal-font-size: 1rem;
+
+    /*============= FONT WEIGHT =============== */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+}
+.container {
+    max-width: 1600px;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+
+}
+.logo {
+    padding: 13px 0 0 0;
+}
+.menu {
+    display: flex;
+    padding: 13px 0 0 0;
+}
+.menu li {
+    padding-left: 30px;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    font-size: 25px;
+}
+.login__button {
+    padding: 10px 0px;
+    width: 106px;
+    border-radius: 15px;
+    background-color: #791118;
+    border: none;
+}
+.login__button a {
+    text-decoration: none;
+    color: white;
+}
+.signup__button {
+    padding: 10px 0px;
+    width: 106px;
+    border-radius: 15px;
+    background-color: #1D1B1B;
+    border: none;
+}
+.signup__button a {
+    text-decoration: none;
+    color: white;
+}
+.button__group {
+    margin-left: 13rem;
+}
+.open-menu, .close-menu {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display:none;
+}
+.open-menu {
+    top: 59%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 30px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+.active {
+    font-weight: bold;
+}
+.menu li a:hover {
+    font-weight: bold;
+}
+.ticker-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: black; /* Set background to black */
+    white-space: nowrap;
+}
+.text-update {
+    color: white;
+}
+.text-update p {
+    margin-top: 1rem;
+    transform: translateX(100%);
+    animation: moving 25s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media screen and (max-width: 1567px) {
+    .button__group {
+        margin-left: 13rem;
+    }
+    .menu li a {
+        font-size: 23px;
+    }
+    .menu {
+        padding: 21px 0 0 0;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .button__group {
+        margin-left: 8rem;
+    }
+    .menu li a {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1472px){
+    .button__group {
+        margin-left: 8rem;
+    }
+    .menu li a {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1421px){
+    .button__group {
+        margin-left: 8rem ;
+    }
+    .menu li a {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1391px){
+    .button__group {
+        margin-left: 10rem ;
+    }
+    .menu li a {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1359px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #fff;
+        transition: all 0.2 ease-in-out;
+        box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    }
+    .menu li {
+        margin-top: 10px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .button__group{
+        margin-left: 0rem;
+    }
+    .login__button {
+        margin: 2rem 0rem 2rem 1.5rem;
+        display: block;
+    }
+    .signup__button {
+        margin: 2rem 0rem 2rem 1.5rem;
+        display: block;
+    }
+    .open-menu , .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    .text-update p {
+        font-size: 14px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+@media screen and (max-width: 769px) {
+    .menu {
+        width: 80%;
+    }
+    .text-update p {
+        font-size: 12px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+@media screen and (max-width: 540px) {
+    .menu li a {
+        font-size: 18px;
+    }
+    .signup__button {
+        margin: 1rem 0rem 3rem 1.5rem;
+        display: block;
+    }
+    .text-update p {
+        font-size: 10px;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .logo__width {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .menu li a {
+        font-size: 18px;
+    }
+    .signup__button {
+        margin: 1rem 0rem 3rem 1.5rem;
+        display: block;
+    }
+    .text-update p {
+        font-size: 8px;
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+    }
+    .logo__width {
+        width: 50%;
+    }
+    .open-menu {
+        top: 65%;
+    }
+}    
