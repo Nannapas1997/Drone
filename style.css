@@ -110,15 +110,15 @@
 .text-update p {
     margin-top: 1rem;
     transform: translateX(100%);
-    animation: moving 25s linear infinite;
+    animation: moving 45s linear infinite;
 }
 
 @keyframes moving {
     0%{
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 @media screen and (max-width: 1567px) {
