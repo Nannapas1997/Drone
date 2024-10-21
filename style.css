@@ -180,7 +180,7 @@ li a:hover {
 }
 .ri-play-large-fill:before {
     position: relative;
-    top: 6px;
+    top: 11px;
 }
 .modal {
     display: none; /* Hidden by default */
@@ -259,6 +259,9 @@ li a:hover {
     cursor: pointer;
     z-index: 10000;
 }
+#fullScreenVideo source {
+    display: none;
+}
 @keyframes moving {
     0%{
         transform: translateX(0);
@@ -277,6 +280,10 @@ li a:hover {
 @media screen and (max-width: 1760px) {
     .background__image {
         border-radius: 32px;
+    }
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 6px;
     }
 }
 @media screen and (max-width: 1688px) {
@@ -444,7 +451,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: 1px;
+        top: 0px;
     }
 }
 @media screen and (max-width: 1359px) {
