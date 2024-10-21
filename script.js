@@ -74,3 +74,43 @@ window.addEventListener("click", function(event) {
         modal.style.display = "none";
     }
 });
+
+$(document).ready(function() {
+  const videoModal = $('#videoModal');
+  const fullScreenVideo = $('#fullScreenVideo')[0];
+  const seeMoreDetailBtn = $('#seeMoreDetailBtn');
+  const closeModal = $('.close-modal');
+
+  // Show the modal and play the video in full-screen
+  seeMoreDetailBtn.on('click', function() {
+      videoModal.show(); // Show the modal
+      fullScreenVideo.play(); // Play the video
+
+      // Request full-screen mode for the video
+      if (fullScreenVideo.requestFullscreen) {
+          fullScreenVideo.requestFullscreen();
+      } else if (fullScreenVideo.mozRequestFullScreen) { // Firefox
+          fullScreenVideo.mozRequestFullScreen();
+      } else if (fullScreenVideo.webkitRequestFullscreen) { // Chrome, Safari and Opera
+          fullScreenVideo.webkitRequestFullscreen();
+      } else if (fullScreenVideo.msRequestFullscreen) { // IE/Edge
+          fullScreenVideo.msRequestFullscreen();
+      }
+  });
+
+  // Close the modal
+  closeModal.on('click', function() {
+      videoModal.hide(); // Hide the modal
+      fullScreenVideo.pause(); // Pause the video
+      fullScreenVideo.currentTime = 0; // Reset the video to the beginning
+  });
+
+  // Close the modal when clicking outside the video content
+  $(window).on('click', function(event) {
+      if ($(event.target).is(videoModal)) {
+          videoModal.hide();
+          fullScreenVideo.pause();
+          fullScreenVideo.currentTime = 0;
+      }
+  });
+});
