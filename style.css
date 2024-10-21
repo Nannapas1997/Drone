@@ -173,15 +173,54 @@ li a:hover {
     border-radius: 50%;
     background-color: white;
     display: inline-block;
-    padding: 11px 0 0 4px;
+    padding: 0px 0 0 4px;
 }
 .play__color {
     color: #791118;
 }
 .ri-play-large-fill:before {
     position: relative;
-    top: 4px;
+    top: 6px;
 }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.read-more-btn {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
 @keyframes moving {
     0%{
         transform: translateX(0);
@@ -191,6 +230,12 @@ li a:hover {
     }
 }
 
+@media screen and (min-width: 1761px) {
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 6px;
+    }
+}
 @media screen and (max-width: 1760px) {
     .background__image {
         border-radius: 32px;
@@ -574,6 +619,17 @@ li a:hover {
 }
 
 @media screen and (max-width: 876px) {
+    .text-overlay-2-full {
+        margin-top: 2rem !important;
+    }
+    .read-more-btn {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 69%;
+        left: 8%;
+
+    }
     .text-overlay-2 {
         font-size: 15px;
         left: 8%;
@@ -591,7 +647,7 @@ li a:hover {
         margin-top: 0.1rem;
         position: absolute;
         top: 72%;
-        left: 8%;
+        left: 70%;
         color: white;
         background-color: #791118;
         font-size: 14px;
@@ -652,7 +708,7 @@ li a:hover {
         margin-top: -0.5rem;
         position: absolute;
         top: 70%;
-        left: 8%;
+        left: 65%;
         color: white;
         background-color: #791118;
         font-size: 14px;
@@ -682,6 +738,14 @@ li a:hover {
     }
     .background__image {
         border-radius: 20px
+    }
+    .read-more-btn {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 66%;
+        left: 8%;
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 722px) {
@@ -722,6 +786,14 @@ li a:hover {
         margin: 3rem 30px 50px 30px;
         border-radius: 24px;
     }
+    .read-more-btn {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 65%;
+        left: 8%;
+
+    }
 }
 @media screen and (max-width: 610px) {
     .button__overlay {
@@ -751,10 +823,26 @@ li a:hover {
 
 @media screen and (max-width: 584px) {
     .text-overlay-2 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+        max-height: calc(1.5em * 5); 
+        line-height: 1.5em; 
         font-size: 11px;
         left: 9%;
         top: 25%;
         max-width: 280px;
+    }
+    .read-more-btn {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 61%;
+        left: 9%;
+        font-size: 12px;
     }
     .text-overlay {
         left: 9%;
@@ -867,20 +955,32 @@ li a:hover {
     }
     .banner__2__width__height {
         margin-top: 2rem;
-     }
-}
-@media screen and (max-width: 500px) {
+    }
     .text-overlay-2 {
-        left: 9%;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        -webkit-line-clamp: 5;
-        line-clamp: 5;
-        max-height: calc(1.5em * 5); 
-        line-height: 1.5em; 
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        max-height: calc(1.5em * 4); 
+        line-height: 1.54em; 
+        font-size: 11px;
+        left: 9%;
+        top: 25%;
+        max-width: 280px;
     }
+     .read-more-btn {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 58%;
+        left: 9%;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 500px) {
+
     .button__overlay {
         position: absolute;
         top: 64%;
@@ -914,10 +1014,18 @@ li a:hover {
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        -webkit-line-clamp: 4;
-        line-clamp: 4;
-        max-height: calc(1.5em * 4); 
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        max-height: calc(1.5em * 3); 
         line-height: 1.54em; 
+    }
+    .read-more-btn {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 55%;
+        left: 11%;
+        font-size: 11px;
     }
     .text-overlay {
         left: 11%;
@@ -1005,10 +1113,18 @@ li a:hover {
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        -webkit-line-clamp: 4;
-        line-clamp: 4;
-        max-height: calc(1.5em * 4); 
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        max-height: calc(1.5em * 3); 
         line-height: 1.54em; 
+    }
+    .read-more-btn {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 51%;
+        left: 11%;
+        font-size: 10px;
     }
     .text-overlay {
         left: 11%;
@@ -1206,6 +1322,14 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .read-more-btn {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 47%;
+        left: 11%;
+        font-size: 9px;
+    }
 }
 @media screen and (max-width: 299px) {
     .text-overlay-2 {
@@ -1220,6 +1344,14 @@ li a:hover {
         line-clamp: 3;
         max-height: calc(1.5em * 2); 
         line-height: 1.6em; 
+    }
+    .read-more-btn {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 43%;
+        left: 11%;
+        font-size: 8px;
     }
     .text-overlay {
         left: 11%;
