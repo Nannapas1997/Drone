@@ -185,7 +185,7 @@ li a:hover {
 }
 .ri-play-large-fill:before {
     position: relative;
-    top: 0.65rem;
+    top: 0.55rem;
 }
 .modal {
     display: none; /* Hidden by default */
@@ -287,7 +287,7 @@ li a:hover {
 @media screen and (min-width: 1761px) {
     .ri-play-large-fill:before {
         position: relative;
-        top: 0.45rem;
+        top: 0.55rem;
     }
 }
 @media screen and (max-width: 1760px) {
@@ -296,7 +296,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: 6px;
+        top: 0.55rem;
     }
 }
 @media screen and (max-width: 1688px) {
@@ -464,7 +464,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: 0px;
+        top: 0.25rem;
     }
 }
 @media screen and (max-width: 1359px) {
@@ -637,7 +637,7 @@ li a:hover {
     .button__overlay {
         margin-top: 0.5rem;
         position: absolute;
-        top: 70%;
+        top: 79%;
         left: 10%;
         color: white;
         background-color: #791118;
@@ -662,7 +662,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: 0px;
+        top: 0.25rem;
     }
 }
 @media screen and (max-width: 1163px) {
@@ -707,7 +707,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: -3px;
+        top: 0.07rem;
     }
 }
 @media screen and (max-width: 1103px) {
@@ -752,7 +752,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: -3px;
+        top: 0.07rem;
     }
 }
 @media screen and (max-width: 876px) {
@@ -810,7 +810,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: 0px;
+        top: 0.13rem;
         right: 1px;
     }
    
@@ -916,7 +916,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: -3px;
+        top: -1px;
         right: 2px;
     }
     .background__image {
@@ -953,7 +953,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: -1px;
+        top: 0px;
         right: 1px;
     }
 }
@@ -1017,7 +1017,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 1px;
+        top: 2px;
         right: 2px
     }
     .background__image {
@@ -1200,7 +1200,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: -2px;
+        top: 0px;
         right: 2px;
     }
 
@@ -1236,8 +1236,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: -1px;
-        right: 5px;
+        top: 1px;
     }
 }
 
@@ -1383,8 +1382,8 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        top: -2px;
-        right: 2px;
+        top: 0;
+        right: 0;
     }
 
 }    
