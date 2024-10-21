@@ -173,11 +173,14 @@ li a:hover {
     border-radius: 50%;
     background-color: white;
     display: inline-block;
-    padding: 7px 0 0 4px;
+    padding: 11px 0 0 4px;
 }
 .play__color {
     color: #791118;
-    margin-top:4px
+}
+.ri-play-large-fill:before {
+    position: relative;
+    top: 4px;
 }
 @keyframes moving {
     0%{
@@ -245,7 +248,7 @@ li a:hover {
         margin-top: 0.5rem;
         position: absolute;
         top: 70%;
-        left: 7%;
+        left: 8%;
         color: white;
         background-color: #791118;
         font-size: 20px;
@@ -262,18 +265,19 @@ li a:hover {
         border-radius: 50%;
         background-color: white;
         display: inline-block;
-        padding: 4px 0 0 4px;
+        padding: px 0 0 4px;
     }
     .play__color {
-       font-size: 30px;
+       font-size: 25px;
     }
+    
 }
 @media screen and (max-width: 1550px) {
     ul li a {
         font-size: 22px;
     }
     .text-overlay-2 {
-        font-size: 13px;
+        font-size: 14px;
         left: 9%;
         max-width: 400px;
     }
@@ -284,7 +288,7 @@ li a:hover {
         margin-top: 0.5rem;
         position: absolute;
         top: 70%;
-        left: 8%;
+        left: 9%;
         color: white;
         background-color: #791118;
         font-size: 18px;
@@ -301,7 +305,7 @@ li a:hover {
         border-radius: 50%;
         background-color: white;
         display: inline-block;
-        padding: 7px 0 0 4px;
+        padding: 2px 0 0 4px;
     }
     .play__color {
        font-size: 25px;
@@ -333,7 +337,7 @@ li a:hover {
         margin-top: 0.5rem;
         position: absolute;
         top: 70%;
-        left: 8%;
+        left: 9%;
         color: white;
         background-color: #791118;
         font-size: 18px;
@@ -350,12 +354,15 @@ li a:hover {
         border-radius: 50%;
         background-color: white;
         display: inline-block;
-        padding: 7px 0 0 4px;
+        padding: 0 0 0 4px;
     }
     .play__color {
         font-size: 20px;
     }
-    
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 1px;
+    }
 }
 @media screen and (max-width: 1359px) {
     .menu{
@@ -515,6 +522,10 @@ li a:hover {
     .play__color {
         font-size: 20px;
     }
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0px;
+    }
 }
 @media screen and (max-width: 1163px) {
     .text-overlay-2 {
@@ -558,7 +569,7 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 3px;
+        top: -3px;
     }
 }
 
@@ -606,7 +617,8 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 1px;
+        top: 0px;
+        right: 1px;
     }
    
 }
@@ -703,8 +715,8 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 3px;
-        right: 2px
+        top: -3px;
+        right: 2px;
     }
     .background__image {
         margin: 3rem 30px 50px 30px;
@@ -732,8 +744,8 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 2px;
-        right: 1px
+        top: -1px;
+        right: 1px;
     }
 }
 
@@ -943,8 +955,8 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 2px;
-        right: 1px
+        top: -2px;
+        right: 2px;
     }
 
 }
@@ -979,8 +991,8 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 1px;
-        right: 1px
+        top: -1px;
+        right: 5px;
     }
 }
 
@@ -1098,7 +1110,7 @@ li a:hover {
         font-size: 5px;
         font-weight: 500;
         border: none;
-        padding: 5px 15px 5px 15px;
+        padding: 5px 10px 5px 10px;
         border-radius: 53px;
         display: flex;
         align-items: center;
@@ -1118,8 +1130,8 @@ li a:hover {
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 2px;
-        left: 1px
+        top: -2px;
+        right: 2px;
     }
 
 }    
@@ -1153,7 +1165,7 @@ li a:hover {
         font-size: 5px;
         font-weight: 500;
         border: none;
-        padding: 5px 15px 5px 15px;
+        padding: 5px 10px 5px 10px;
         border-radius: 53px;
         display: flex;
         align-items: center;
@@ -1189,7 +1201,7 @@ li a:hover {
         font-size: 5px;
         font-weight: 500;
         border: none;
-        padding: 5px 15px 5px 15px;
+        padding: 5px 10px 5px 10px;
         border-radius: 53px;
         display: flex;
         align-items: center;
@@ -1219,13 +1231,121 @@ li a:hover {
         margin-top: -1.5rem;
         position: absolute;
         top: 68%;
-        left: 59%;
+        left: 63%;
         color: white;
         background-color: #791118;
         font-size: 5px;
         font-weight: 500;
         border: none;
-        padding: 5px 15px 5px 15px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+}
+@media screen and (max-width: 270px) {
+    .text-overlay-2 {
+        left: 11%;
+        top: 25%;
+        font-size: 8px;
+        max-width: 170px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-clamp: 3;
+        max-height: calc(1.5em * 2); 
+        line-height: 1.6em; 
+    }
+    .text-overlay {
+        left: 11%;
+        top: 23%;
+        font-size: 10px;
+    }
+    
+    .button__overlay {
+        margin-top: -1.5rem;
+        position: absolute;
+        top: 68%;
+        left: 64%;
+        color: white;
+        background-color: #791118;
+        font-size: 5px;
+        font-weight: 500;
+        border: none;
+        padding: 5px 7px 5px 7px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+}
+@media screen and (max-width: 258px) {
+    .text-overlay-2 {
+        left: 11%;
+        top: 22%;
+        font-size: 7px;
+        max-width: 100px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-clamp: 3;
+        max-height: calc(1.5em * 2); 
+        line-height: 1.6em; 
+    }
+    .text-overlay {
+        left: 11%;
+        top: 23%;
+        font-size: 8px;
+    }
+    
+    .button__overlay {
+        margin-top: -1.5rem;
+        position: absolute;
+        top: 68%;
+        left: 63%;
+        color: white;
+        background-color: #791118;
+        font-size: 5px;
+        font-weight: 500;
+        border: none;
+        padding: 3px 5px 3px 5px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+}
+@media screen and (max-width: 236px) {
+    .text-overlay-2 {
+        left: 11%;
+        top: 23%;
+        font-size: 6px;
+        max-width: 100px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-clamp: 3;
+        max-height: calc(1.5em * 2); 
+        line-height: 1.6em; 
+    }
+    .text-overlay {
+        left: 11%;
+        top: 25%;
+        font-size: 7px;
+    }
+    
+    .button__overlay {
+        margin-top: -1.5rem;
+        position: absolute;
+        top: 68%;
+        left: 60%;
+        color: white;
+        background-color: #791118;
+        font-size: 5px;
+        font-weight: 500;
+        border: none;
+        padding: 3px 5px 3px 5px;
         border-radius: 53px;
         display: flex;
         align-items: center;
