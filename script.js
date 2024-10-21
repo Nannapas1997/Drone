@@ -1,5 +1,5 @@
 // Select the menu container
-const menuLinks = document.querySelectorAll('#navMenu .menu li a');
+const menuLinks = document.querySelectorAll('#navMenu > li a');
 
 // Loop through the links and add click event listener
 menuLinks.forEach(link => {
