@@ -110,9 +110,13 @@ ul li a {
     transform: translateX(100%);
     animation: moving 25s linear infinite;
 }
+.background__image {
+    background-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 42%, rgba(0,0,0,0) 100%);
+    margin: 3rem 100px 50px 100px;
+    border-radius: 50px;
+}
 .banner__2__width__height {
-   padding: 0 100px 50px 100px;
-   margin-top: 3rem
+   margin-top: 3rem;
 }
 .image__container {
     position: relative;
@@ -122,6 +126,8 @@ ul li a {
 .image__container img.banner__2__width__height {
     width: 100%;
     display: block;
+    position: relative;
+    z-index: -1;
 }
 
 .text-overlay {
@@ -143,7 +149,6 @@ ul li a {
     max-width: 600px;
     font-size: 20px;
     font-weight: 300;
-    text-align: justify;
 }
 .button__overlay {
     margin-top: 1rem;
@@ -181,6 +186,11 @@ ul li a {
     }
 }
 
+@media screen and (max-width: 1760px) {
+    .background__image {
+        border-radius: 32px;
+    }
+}
 @media screen and (max-width: 1688px) {
     .text-overlay-2 {
         font-size: 18px;
@@ -206,7 +216,7 @@ ul li a {
 @media screen and (max-width: 1567px) {
     ul .menu li  a {
         font-size: 23px;
-        left: 10%
+
     }
     .menu {
         padding: 21px 0 0 0;
@@ -492,21 +502,21 @@ ul li a {
 @media screen and (max-width: 1163px) {
     .text-overlay-2 {
         font-size: 12px;
-        left: 11%;
-        max-width: 350px;
+        left: 8%;
+        max-width: 400px;
     }
     .text-overlay {
-        left: 11%;
+        left: 8%;
         top: 15%
     }
     .button__overlay {
         margin-top: 0.5rem;
         position: absolute;
         top: 70%;
-        left: 11%;
+        left: 8%;
         color: white;
         background-color: #791118;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         border: none;
         padding: 10px 20px 10px 20px;
@@ -515,8 +525,8 @@ ul li a {
         align-items: center;
     } 
     .circle {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         border-radius: 50%;
         background-color: white;
         display: inline-block;
@@ -525,149 +535,21 @@ ul li a {
     .play__color {
         font-size: 20px;
     }
-}
-@media screen and (max-width: 1099px) {
-    .text-overlay-2 {
-        font-size: 10px;
-        left: 12%;
-        max-width: 300px;
-    }
-    .text-overlay {
-        left: 12%;
-        top: 15%;
-        font-size: 20px;
-    }
-    
-    .button__overlay {
-        margin-top: 0.5rem;
-        position: absolute;
-        top: 70%;
-        left: 12%;
-        color: white;
-        background-color: #791118;
-        font-size: 14px;
-        font-weight: 500;
-        border: none;
-        padding: 10px 20px 10px 20px;
-        border-radius: 53px;
-        display: flex;
-        align-items: center;
-    } 
-    .circle {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0 5px 4px;
-    }
-    .play__color {
-        font-size: 16px;
+    .background__image {
+        margin: 3rem 50px 50px 50px;
+        border-radius: 24px;
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 2px;
+        bottom: 3px;
     }
 }
 
-@media screen and (max-width: 968px) {
-    .text-overlay-2 {
-        font-size: 8px;
-        left: 13%;
-        max-width: 250px;
-    }
-    .text-overlay {
-        left: 13%;
-        top: 15%;
-        font-size: 20px;
-    }
-    
-    .button__overlay {
-        margin-top: 0.1rem;
-        position: absolute;
-        top: 70%;
-        left: 13%;
-        color: white;
-        background-color: #791118;
-        font-size: 14px;
-        font-weight: 500;
-        border: none;
-        padding: 7px 20px 7px 20px;
-        border-radius: 53px;
-        display: flex;
-        align-items: center;
-    } 
-    .circle {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0 10px 4px;
-        position: relative;
-        top: 1px;
-    }
-    .play__color {
-        font-size: 14px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        bottom: 1px;
-    }
-}
-@media screen and (max-width: 943px) {
-    .text-overlay-2 {
-        font-size: 9px;
-        left: 8%;
-        max-width: 250px;
-    }
-    .text-overlay {
-        left: 8%;
-        top: 15%;
-        font-size: 17px;
-    }
-    
-    .button__overlay {
-        margin-top: 1rem;
-        position: absolute;
-        top: 70%;
-        left: 8%;
-        color: white;
-        background-color: #791118;
-        font-size: 14px;
-        font-weight: 500;
-        border: none;
-        padding: 7px 20px 7px 20px;
-        border-radius: 53px;
-        display: flex;
-        align-items: center;
-    } 
-    .circle {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0 10px 4px;
-        position: relative;
-        top: 1px;
-    }
-    .play__color {
-        font-size: 14px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        bottom: 1px;
-    }
-    .banner__2__width__height{
-        padding: 0 54px 50px 54px;
-    }
-}
 @media screen and (max-width: 876px) {
     .button__overlay {
         margin-top: 0.1rem;
         position: absolute;
-        top: 70%;
+        top: 72%;
         left: 8%;
         color: white;
         background-color: #791118;
@@ -696,15 +578,13 @@ ul li a {
         position: relative;
         bottom: 1px;
     }
-    .banner__2__width__height{
-        padding: 0 54px 50px 54px;
-    }
+   
 }
-@media screen and (max-width: 826px) {
+@media screen and (max-width: 858px) {
     .text-overlay-2 {
-        font-size: 8px;
+        font-size: 10px;
         left: 8%;
-        max-width: 250px;
+        max-width: 350px;
     }
     .text-overlay {
         left: 8%;
@@ -712,7 +592,7 @@ ul li a {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 792px) {
     li {
         width: 80%;
     }
@@ -726,10 +606,10 @@ ul li a {
         margin-top: 15px;
     }
     .text-overlay-2 {
-        font-size: 7px;
+        font-size: 9px;
         left: 10%;
         top: 25%;
-        max-width: 250px;
+        max-width: 350px;
     }
     .text-overlay {
         left: 10%;
@@ -769,23 +649,11 @@ ul li a {
         position: relative;
         bottom: 1px;
     }
-    .banner__2__width__height{
-        padding: 0 54px 50px 54px;
+    .background__image {
+        border-radius: 20px
     }
 }
 @media screen and (max-width: 722px) {
-    .text-overlay-2 {
-        font-size: 7px;
-        left: 10%;
-        top: 25%;
-        max-width: 220px;
-    }
-    .text-overlay {
-        left: 10%;
-        top: 20%;
-        font-size: 17px;
-    }
-    
     .button__overlay {
         margin-top: -0.5rem;
         position: absolute;
@@ -819,19 +687,20 @@ ul li a {
         bottom: 3px;
         right: 2px
     }
-    .banner__2__width__height{
-        padding: 0 54px 50px 54px;
+    .background__image {
+        margin: 3rem 30px 50px 30px;
+        border-radius: 24px;
     }
 }
-@media screen and (max-width: 684px) {
+@media screen and (max-width: 610px) {
     .button__overlay {
         margin-top: -0.5rem;
         position: absolute;
-        top: 65%;
-        left: 62%;
+        top: 70%;
+        left: 65%;
         color: white;
         background-color: #791118;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
         border: none;
         padding: 7px 20px 7px 20px;
@@ -839,14 +708,22 @@ ul li a {
         display: flex;
         align-items: center;
     } 
+    .play__color {
+        font-size: 11px;
+    }
+    .ri-play-large-fill:before {
+        position: relative;
+        bottom: 2px;
+        right: 1px
+    }
 }
 
 @media screen and (max-width: 584px) {
     .text-overlay-2 {
-        font-size: 6px;
+        font-size: 8px;
         left: 9%;
         top: 25%;
-        max-width: 180px;
+        max-width: 280px;
     }
     .text-overlay {
         left: 9%;
@@ -857,14 +734,14 @@ ul li a {
     .button__overlay {
         margin-top: -0.5rem;
         position: absolute;
-        top: 70%;
-        left: 65%;
+        top: 68%;
+        left: 67%;
         color: white;
         background-color: #791118;
-        font-size: 8px;
+        font-size: 11px;
         font-weight: 500;
         border: none;
-        padding: 7px 20px 7px 20px;
+        padding: 7px 15px 7px 15px;
         border-radius: 53px;
         display: flex;
         align-items: center;
@@ -887,31 +764,13 @@ ul li a {
         bottom: 1px;
         right: 2px
     }
-    .banner__2__width__height{
-        padding: 0 40px 50px 40px;
+    .background__image {
+        border-radius: 14px
     }
+
 }
-@media screen and (max-width: 566px) {
-    .button__overlay {
-        margin-top: -0.5rem;
-        position: absolute;
-        top: 65%;
-        left: 65%;
-        color: white;
-        background-color: #791118;
-        font-size: 8px;
-        font-weight: 500;
-        border: none;
-        padding: 7px 20px 7px 20px;
-        border-radius: 53px;
-        display: flex;
-        align-items: center;
-    } 
-    .banner__2__width__height{
-        padding: 0 40px 50px 40px;
-    }
-}
-@media screen and (max-width: 540px) {
+
+@media screen and (max-width: 530px) {
     li a {
         font-size: 18px;
     }
@@ -939,31 +798,28 @@ ul li a {
         margin-top: 0;
         margin-bottom: 5px;
     }
-}
-@media screen and (max-width: 500px) {
     .text-overlay-2 {
-        font-size: 5px;
-        left: 11%;
+        max-width: 270px;
+        font-size: 7px;
+        left: 9%;
         top: 25%;
-        max-width: 170px;
     }
     .text-overlay {
-        left: 11%;
-        top: 23%;
-        font-size: 12px;
+        left: 9%;
+        top: 20%;
+        font-size: 14px;
     }
-    
     .button__overlay {
-        margin-top: -1.5rem;
+
         position: absolute;
-        top: 70%;
-        left: 60%;
+        top: 65%;
+        left: 64%;
         color: white;
         background-color: #791118;
-        font-size: 8px;
+        font-size: 11px;
         font-weight: 500;
         border: none;
-        padding: 7px 20px 7px 20px;
+        padding: 7px 15px 7px 15px;
         border-radius: 53px;
         display: flex;
         align-items: center;
@@ -974,7 +830,7 @@ ul li a {
         border-radius: 50%;
         background-color: white;
         display: inline-block;
-        padding: 0px 0 10px 4px;
+        padding: 0px 0 10px 0px;
         position: relative;
         top: 1px;
     }
@@ -984,18 +840,48 @@ ul li a {
     .ri-play-large-fill:before {
         position: relative;
         bottom: 1px;
+        left: 1px
+    }
+    .background__image {
+        margin: 0rem 30px 50px 30px;
+    }
+    .banner__2__width__height {
+        margin-top: 2rem;
+     }
+}
+@media screen and (max-width: 500px) {
+ 
+    .button__overlay {
+        position: absolute;
+        top: 64%;
+        left: 65%;
+        color: white;
+        background-color: #791118;
+        font-size: 8px;
+        font-weight: 500;
+        border: none;
+        padding: 7px 20px 7px 20px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+   
+    .ri-play-large-fill:before {
+        position: relative;
+        bottom: 1px;
         right: 2px
     }
-    .banner__2__width__height{
-        padding: 0 40px 50px 40px;
+    .background__image {
+        margin: 0rem 30px 50px 30px;
+        border-radius: 10px;
     }
 }
 @media screen and (max-width: 470px) {
     .text-overlay-2 {
-        font-size: 5px;
+        font-size: 6px;
         left: 11%;
         top: 25%;
-        max-width: 140px;
+        max-width: 240px;
     }
     .text-overlay {
         left: 11%;
@@ -1007,7 +893,7 @@ ul li a {
         margin-top: -1.5rem;
         position: absolute;
         top: 73%;
-        left: 63%;
+        left: 67%;
         color: white;
         background-color: #791118;
         font-size: 6px;
@@ -1024,7 +910,7 @@ ul li a {
         border-radius: 50%;
         background-color: white;
         display: inline-block;
-        padding: 0px 10px 10px 4px;
+        padding: 0px 0px 10px 0px;
         position: relative;
         top: 1px;
     }
@@ -1036,20 +922,18 @@ ul li a {
         bottom: 2px;
         right: 1px
     }
-    .banner__2__width__height{
-        padding: 0 40px 50px 40px;
-    }
+
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 434px) {
     .text-overlay-2 {
-        font-size: 5px;
+        font-size: 6px;
         left: 9%;
-        top: 25%;
-        max-width: 140px;
+        top: 21%;
+        max-width:210px;
     }
     .text-overlay {
         left: 9%;
-        top: 23%;
+        top: 19%;
         font-size: 12px;
     }
     
@@ -1057,7 +941,7 @@ ul li a {
         margin-top: -1.5rem;
         position: absolute;
         top: 73%;
-        left: 63%;
+        left: 66%;
         color: white;
         background-color: #791118;
         font-size: 6px;
@@ -1074,22 +958,71 @@ ul li a {
         border-radius: 50%;
         background-color: white;
         display: inline-block;
-        padding: 0px 10px 10px 4px;
+        padding: 0px 0px 10px 0px;
         position: relative;
         top: 1px;
     }
     .play__color {
-        font-size: 9px;
+        font-size: 8px;
     }
     .ri-play-large-fill:before {
         position: relative;
-        bottom: 0px;
-        right: 0px
-    }
-    .banner__2__width__height{
-        padding: 0 20px 50px 20px;
+        bottom: 1px;
+        right: 1px
     }
 }
+
+@media screen and (max-width: 396px) {
+    .text-overlay-2 {
+        font-size:0.35rem;
+        left: 9%;
+        top: 21%;
+        max-width:200px;
+    }
+    .text-overlay {
+        left: 9%;
+        top: 19%;
+        font-size: 10px;
+    }
+    
+    .button__overlay {
+        position: absolute;
+        top: 70%;
+        left: 70%;
+        color: white;
+        background-color: #791118;
+        font-size: 6px;
+        font-weight: 500;
+        border: none;
+        padding: 7px 10px 7px 10px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+    .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        display: inline-block;
+        padding: 0px 0px 10px 0px;
+        position: relative;
+        top: 1px;
+    }
+    .play__color {
+        font-size: 8px;
+    }
+    .ri-play-large-fill:before {
+        position: relative;
+        bottom: 1px;
+        left: 1px
+    }
+    .background__image {
+        margin: 0rem 20px 50px 20px;
+        border-radius: 10px;
+    }
+}
+
 @media screen and (max-width: 360px) {
     li a {
         font-size: 18px;
@@ -1118,14 +1051,14 @@ ul li a {
         margin-bottom: 5px;
     }
     .text-overlay-2 {
-        font-size: 4px;
+        font-size: 0.35rem;
         left: 9%;
-        top: 25%;
-        max-width: 140px;
+        top: 21%;
+        max-width: 180px;
     }
     .text-overlay {
         left: 9%;
-        top: 26%;
+        top: 20%;
         font-size: 10px;
     }
     
@@ -1133,7 +1066,7 @@ ul li a {
         margin-top: -1.5rem;
         position: absolute;
         top: 72%;
-        left: 65%;
+        left: 70%;
         color: white;
         background-color: #791118;
         font-size: 4px;
@@ -1150,7 +1083,7 @@ ul li a {
         border-radius: 50%;
         background-color: white;
         display: inline-block;
-        padding: 0px 10px 10px 4px;
+        padding: 0px 0px 10px 0px;
         position: relative;
         top: 1px;
     }
@@ -1160,10 +1093,7 @@ ul li a {
     .ri-play-large-fill:before {
         position: relative;
         bottom: 2px;
-        right: 1px
+        left: 1px
     }
-    .banner__2__width__height{
-        padding: 0 20px 50px 20px;
-        
-    }
+
 }    
