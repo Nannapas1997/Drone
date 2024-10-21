@@ -114,7 +114,12 @@ li a:hover {
 }
 .background__image {
     background-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 42%, rgba(0,0,0,0) 100%);
-    margin: 3rem 100px 50px 100px;
+    margin: 3rem 100px 0 100px;
+    border-radius: 50px;
+}
+.background__image__2 {
+    background: rgba(255,255,255,0.8);
+    margin: 0 100px 50px 100px;
     border-radius: 50px;
 }
 .banner__2__width__height {
@@ -213,6 +218,14 @@ li a:hover {
     cursor: pointer;
 }
 .read-more-btn {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.read-more-btn-2 {
     display: none;
     color: white;
     cursor: pointer;
