@@ -160,7 +160,7 @@ li a:hover {
 .button__overlay {
     margin-top: 1rem;
     position: absolute;
-    top: 73%;
+    top: 78%;
     left: 7%;
     color: white;
     background-color: #791118;
@@ -185,7 +185,7 @@ li a:hover {
 }
 .ri-play-large-fill:before {
     position: relative;
-    top: 11px;
+    top: 0.65rem;
 }
 .modal {
     display: none; /* Hidden by default */
@@ -246,7 +246,7 @@ li a:hover {
 }
 
 /* Modal content for video */
-.modal-content {
+.modal-content-2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -350,7 +350,7 @@ li a:hover {
     .button__overlay {
         margin-top: 0.5rem;
         position: absolute;
-        top: 70%;
+        top: 78%;
         left: 8%;
         color: white;
         background-color: #791118;
@@ -380,7 +380,7 @@ li a:hover {
         font-size: 22px;
     }
     .text-overlay-2 {
-        font-size: 14px;
+        font-size: 15px;
         left: 9%;
         max-width: 400px;
     }
@@ -390,7 +390,7 @@ li a:hover {
     .button__overlay {
         margin-top: 0.5rem;
         position: absolute;
-        top: 70%;
+        top: 79%;
         left: 9%;
         color: white;
         background-color: #791118;
@@ -429,7 +429,7 @@ li a:hover {
         font-size: 20px;
     }
     .text-overlay-2 {
-        font-size: 13px;
+        font-size: 15px;
         left: 9%;
         max-width: 400px;
     }
@@ -439,7 +439,7 @@ li a:hover {
     .button__overlay {
         margin-top: 0.5rem;
         position: absolute;
-        top: 70%;
+        top: 83%;
         left: 9%;
         color: white;
         background-color: #791118;
@@ -553,7 +553,7 @@ li a:hover {
     }
 
     .text-overlay-2 {
-        font-size: 13px;
+        font-size: 15px;
         left: 9%;
         max-width: 400px;
     }
@@ -563,7 +563,7 @@ li a:hover {
     .button__overlay {
         margin-top: 0.5rem;
         position: absolute;
-        top: 70%;
+        top: 82%;
         left: 9%;
         color: white;
         background-color: #791118;
@@ -588,7 +588,42 @@ li a:hover {
     }
     
 }
-
+@media screen and (max-width: 1345px) {
+    .text-overlay-2 {
+        font-size: 14px;
+        left: 9%;
+        max-width: 400px;
+    }
+    .text-overlay {
+        left: 9%;
+    }
+    .button__overlay {
+        margin-top: 0.5rem;
+        position: absolute;
+        top: 82%;
+        left: 9%;
+        color: white;
+        background-color: #791118;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        display: inline-block;
+        padding: 1px 0 0 4px;
+    }
+    .play__color {
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 1243px) {
     .text-overlay-2 {
         font-size: 12px;
@@ -631,6 +666,51 @@ li a:hover {
     }
 }
 @media screen and (max-width: 1163px) {
+    .text-overlay-2 {
+        font-size: 13px;
+        left: 8%;
+        max-width: 400px;
+    }
+    .text-overlay {
+        left: 8%;
+        top: 15%
+    }
+    .button__overlay {
+        margin-top: 0.5rem;
+        position: absolute;
+        top: 70%;
+        left: 8%;
+        color: white;
+        background-color: #791118;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+    .circle {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: white;
+        display: inline-block;
+        padding: 1px 0 0 4px;
+    }
+    .play__color {
+        font-size: 20px;
+    }
+    .background__image {
+        margin: 3rem 50px 50px 50px;
+        border-radius: 24px;
+    }
+    .ri-play-large-fill:before {
+        position: relative;
+        top: -3px;
+    }
+}
+@media screen and (max-width: 1103px) {
     .text-overlay-2 {
         font-size: 12px;
         left: 8%;
@@ -675,7 +755,6 @@ li a:hover {
         top: -3px;
     }
 }
-
 @media screen and (max-width: 876px) {
     .text-overlay-2-full {
         margin-top: 2rem !important;
