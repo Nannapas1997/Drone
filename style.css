@@ -1422,6 +1422,11 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
 @media screen and (max-width: 319px) {
     .text-overlay-2 {
@@ -1465,6 +1470,11 @@ li a:hover {
         top: 47%;
         left: 11%;
         font-size: 9px;
+    }
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
     }
 }
 @media screen and (max-width: 299px) {
@@ -1510,6 +1520,11 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
 @media screen and (max-width: 270px) {
     .text-overlay-2 {
@@ -1546,6 +1561,11 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
 @media screen and (max-width: 258px) {
     .text-overlay-2 {
@@ -1582,6 +1602,11 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
 @media screen and (max-width: 236px) {
     .text-overlay-2 {
@@ -1618,4 +1643,9 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
