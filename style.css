@@ -120,7 +120,7 @@ li a:hover {
 .background__image__2 {
     background: rgba(255,255,255,0.8);
     margin: 0 100px 50px 100px;
-    border-radius: 50px;
+    border-radius: 38px;
 }
 .banner__2__width__height {
    margin-top: 3rem;
@@ -157,6 +157,25 @@ li a:hover {
     font-size: 20px;
     font-weight: 300;
 }
+.text-overlay-3 {
+    position: absolute;
+    top: 12%;
+    left: 7%;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: left;
+}
+.text-overlay-4 {
+    margin-top: 1rem;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 1550px;
+}
 .button__overlay {
     margin-top: 1rem;
     position: absolute;
@@ -172,20 +191,8 @@ li a:hover {
     display: flex;
     align-items: center;
 } 
-.circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    display: inline-block;
-    padding: 0px 0 0 4px;
-}
-.play__color {
-    color: #791118;
-}
-.ri-play-large-fill:before {
-    position: relative;
-    top: 0.55rem;
+.play__button {
+    width: 30px;
 }
 .modal {
     display: none; /* Hidden by default */
@@ -197,7 +204,27 @@ li a:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
-
+.modal-2 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
 .modal-content {
     position: absolute;
     top: 50%;
@@ -209,7 +236,13 @@ li a:hover {
     max-width: 500px;
     border-radius: 10px;
 }
-
+.close-modal3{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
 .close-modal {
     position: absolute;
     top: 10px;
@@ -227,7 +260,7 @@ li a:hover {
 }
 .read-more-btn-2 {
     display: none;
-    color: white;
+    color: black;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
@@ -284,19 +317,30 @@ li a:hover {
     }
 }
 
-@media screen and (min-width: 1761px) {
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0.55rem;
+@media screen and (max-width: 1784px) {
+    .text-overlay-3 {
+        position: absolute;
+        top: 12%;
+        left: 7%;
+        color: black;
+        font-size: 38px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 20%;
+        left: 7%;
+        color: black;
+        font-size: 18px;
+        font-weight: 300;
+        max-width: 1400px;
     }
 }
 @media screen and (max-width: 1760px) {
     .background__image {
         border-radius: 32px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0.55rem;
     }
 }
 @media screen and (max-width: 1688px) {
@@ -320,6 +364,25 @@ li a:hover {
         left: 8%;
         font-size: 30px;
     }
+    .text-overlay-3 {
+        position: absolute;
+        top: 12%;
+        left: 7%;
+        color: black;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 20%;
+        left: 7%;
+        color: black;
+        font-size: 18px;
+        font-weight: 300;
+        max-width: 1350px;
+    }
 }
 @media screen and (max-width: 1608px) {
     .container {
@@ -328,6 +391,25 @@ li a:hover {
     ul li a {
         font-size: 22px;
 
+    }
+    .text-overlay-3 {
+        position: absolute;
+        top: 15%;
+        left: 9%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 25%;
+        left: 9%;
+        color: black;
+        font-size: 16px;
+        font-weight: 300;
+        max-width: 1250px;
     }
 }
 @media screen and (max-width: 1567px) {
@@ -362,17 +444,6 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: px 0 0 4px;
-    }
-    .play__color {
-       font-size: 25px;
-    }
     
 }
 @media screen and (max-width: 1550px) {
@@ -402,21 +473,53 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 2px 0 0 4px;
+    .background__image__2 {
+        border-radius: 32px;
     }
-    .play__color {
-       font-size: 25px;
+    .text-overlay-3 {
+        position: absolute;
+        top: 15%;
+        left: 9%;
+        color: black;
+        font-size: 32px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 25%;
+        left: 9%;
+        color: black;
+        font-size: 15px;
+        font-weight: 300;
+        max-width: 1200px;
     }
 }
 @media screen and (max-width: 1472px){
     ul  li a {
         font-size: 21px;
+    }
+}
+@media screen and (max-width: 1434px) {
+    .text-overlay-3 {
+        position: absolute;
+        top: 15%;
+        left: 9%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 25%;
+        left: 9%;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 1100px;
     }
 }
 @media screen and (max-width: 1421px){
@@ -451,20 +554,8 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0 0 0 4px;
-    }
-    .play__color {
-        font-size: 20px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0.25rem;
+    .background__image__2 {
+        border-radius: 29px;
     }
 }
 @media screen and (max-width: 1359px) {
@@ -575,18 +666,6 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 1px 0 0 4px;
-    }
-    .play__color {
-        font-size: 20px;
-    }
-    
 }
 @media screen and (max-width: 1345px) {
     .text-overlay-2 {
@@ -612,16 +691,110 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 1px 0 0 4px;
+    .text-overlay-3 {
+        position: absolute;
+        top: 15%;
+        left: 9%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
     }
-    .play__color {
-        font-size: 20px;
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 25%;
+        left: 9%;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 1050px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 8;
+        line-clamp: 8;
+        max-height: calc(1.5em * 8); 
+        line-height: 1.5em; 
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 69%;
+        left: 9%;
+    }
+    .text-overlay-3-full {
+        margin-top: 2rem !important;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .text-overlay-3 {
+        position: absolute;
+        top: 15%;
+        left: 11%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 25%;
+        left: 11%;
+        color: black;
+        font-size: 13px;
+        font-weight: 300;
+        max-width: 900px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 8;
+        line-clamp: 8;
+        max-height: calc(1.5em * 8); 
+        line-height: 1.5em; 
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 69%;
+        left: 11%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .text-overlay-3 {
+        position: absolute;
+        top: 15%;
+        left: 11%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 25%;
+        left: 11%;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 850px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 8;
+        line-clamp: 8;
+        max-height: calc(1.5em * 8); 
+        line-height: 1.5em; 
+    }
+    .background__image__2 {
+        border-radius: 24px;
     }
 }
 @media screen and (max-width: 1243px) {
@@ -649,20 +822,12 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 1px 0 0 4px;
-    }
-    .play__color {
-        font-size: 20px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0.25rem;
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 72%;
+        left: 11%;
     }
 }
 @media screen and (max-width: 1163px) {
@@ -690,24 +855,82 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 1px 0 0 4px;
-    }
-    .play__color {
-        font-size: 20px;
-    }
+ 
     .background__image {
         margin: 3rem 50px 50px 50px;
         border-radius: 24px;
     }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0.07rem;
+    .banner__2__width__height {
+        margin-top: 0rem;
+    }
+    .background__image__2 {
+        margin: 0 30px 50px 30px;
+    }
+   
+}
+@media screen and (max-width: 1150px) {
+    .text-overlay-3 {
+        position: absolute;
+        top: 7%;
+        left: 9%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 18%;
+        left: 9%;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 850px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 8;
+        line-clamp: 8;
+        max-height: calc(1.5em * 8); 
+        line-height: 1.5em; 
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 63%;
+        left: 9%;
+    }
+}
+@media screen and (max-width: 1016px) {
+    .text-overlay-3 {
+        position: absolute;
+        top: 7%;
+        left: 9%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 18%;
+        left: 9%;
+        color: black;
+        font-size: 13px;
+        font-weight: 300;
+        max-width: 850px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 6;
+        line-clamp: 6;
+        max-height: calc(1.5em * 6); 
+        line-height: 1.5em; 
     }
 }
 @media screen and (max-width: 1103px) {
@@ -735,24 +958,118 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 1px 0 0 4px;
-    }
-    .play__color {
-        font-size: 20px;
-    }
+
     .background__image {
         margin: 3rem 50px 50px 50px;
         border-radius: 24px;
     }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0.07rem;
+    .text-overlay-3 {
+        position: absolute;
+        top: 7%;
+        left: 9%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 18%;
+        left: 9%;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 800px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 6;
+        line-clamp: 6;
+        max-height: calc(1.5em * 6); 
+        line-height: 1.5em; 
+    }
+    .background__image__2 {
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 968px) {
+    .play__button {
+        width: 30px;
+    }
+    .button__overlay {
+        margin-top: 0.5rem;
+        position: absolute;
+        top: 68%;
+        left: 8%;
+        color: white;
+        background-color: #791118;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+}
+@media screen and (max-width: 946px) {
+    .text-overlay-3 {
+        position: absolute;
+        top: 7%;
+        left: 9%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 18%;
+        left: 9%;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 750px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+        max-height: calc(1.5em * 5); 
+        line-height: 1.5em; 
+    }
+}
+@media screen and (max-width: 900px) {
+    .text-overlay-3 {
+        position: absolute;
+        top: 7%;
+        left: 9%;
+        color: black;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 18%;
+        left: 9%;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 680px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+        max-height: calc(1.5em * 5); 
+        line-height: 1.5em; 
     }
 }
 @media screen and (max-width: 876px) {
@@ -783,7 +1100,7 @@ li a:hover {
     .button__overlay {
         margin-top: 0.1rem;
         position: absolute;
-        top: 72%;
+        top: 69%;
         left: 70%;
         color: white;
         background-color: #791118;
@@ -795,27 +1112,36 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0 10px 4px;
-        position: relative;
-        top: 1px;
-    }
-    .play__color {
-        font-size: 14px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0.13rem;
-        right: 1px;
-    }
    
+    .play__button {
+        width: 30px;
+    }
+    .background__image__2 {
+        border-radius: 17px;
+    }
 }
-
+@media screen and (max-width: 812px) {
+    .button__overlay {
+        margin-top: 0.1rem;
+        position: absolute;
+        top: 67%;
+        left: 67%;
+        color: white;
+        background-color: #791118;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        padding: 7px 20px 7px 20px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+   
+    .play__button {
+        width: 30px;
+    }
+    
+}
 @media screen and (max-width: 792px) {
     li {
         width: 80%;
@@ -856,23 +1182,6 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0 10px 4px;
-        position: relative;
-        top: 1px;
-    }
-    .play__color {
-        font-size: 14px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        bottom: 1px;
-    }
     .background__image {
         border-radius: 20px
     }
@@ -883,6 +1192,37 @@ li a:hover {
         top: 66%;
         left: 8%;
         font-size: 12px;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 18%;
+        left: 9%;
+        color: black;
+        font-size: 12px;
+        font-weight: 300;
+        max-width: 550px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        max-height: calc(1.5em * 4); 
+        line-height: 1.5em; 
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 53%;
+        left: 9%;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 764px) {
+    .background__image__2 {
+        border-radius: 14px;
     }
 }
 @media screen and (max-width: 722px) {
@@ -901,24 +1241,6 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0 10px 4px;
-        position: relative;
-        top: 1px;
-    }
-    .play__color {
-        font-size: 12px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: -1px;
-        right: 2px;
-    }
     .background__image {
         margin: 3rem 30px 50px 30px;
         border-radius: 24px;
@@ -932,32 +1254,115 @@ li a:hover {
 
     }
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 672px) {
     .button__overlay {
-        margin-top: -0.5rem;
+        margin-top: 0.1rem;
         position: absolute;
-        top: 70%;
-        left: 67%;
+        top: 65%;
+        left: 65%;
         color: white;
         background-color: #791118;
         font-size: 12px;
         font-weight: 500;
         border: none;
-        padding: 7px 20px 7px 20px;
+        padding: 7px 15px 7px 15px;
         border-radius: 53px;
         display: flex;
         align-items: center;
     } 
-    .play__color {
-        font-size: 11px;
+   
+    .play__button {
+        width: 30px;
     }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0px;
-        right: 1px;
+    .text-overlay-3 {
+        position: absolute;
+        top: 7%;
+        left: 9%;
+        color: black;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 18%;
+        left: 9%;
+        color: black;
+        font-size: 12px;
+        font-weight: 300;
+        max-width: 520px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        max-height: calc(1.5em * 3); 
+        line-height: 1.5em; 
     }
 }
+@media screen and (max-width: 642px) {
+    .button__overlay {
+        margin-top: 0.1rem;
+        position: absolute;
+        top: 64%;
+        left: 64%;
+        color: white;
+        background-color: #791118;
+        font-size: 12px;
+        font-weight: 500;
+        border: none;
+        padding: 5px 15px 5px 15px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+   .text-overlay-2 {
+        max-width: 250px;
+   }
+    
+}
 
+@media screen and (max-width: 600px) {
+    .text-overlay-3 {
+        position: absolute;
+        top: 7%;
+        left: 9%;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 18%;
+        left: 9%;
+        color: black;
+        font-size: 12px;
+        font-weight: 300;
+        max-width: 450px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        max-height: calc(1.5em * 3); 
+        line-height: 1.5em; 
+    }
+    .background__image__2 {
+        border-radius: 10px;
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 48%;
+        left: 9%;
+    }
+}
 @media screen and (max-width: 584px) {
     .text-overlay-2 {
         display: -webkit-box;
@@ -988,44 +1393,65 @@ li a:hover {
     }
     
     .button__overlay {
-        margin-top: -0.5rem;
+        margin-top: 0.1rem;
         position: absolute;
-        top: 68%;
-        left: 67%;
+        top: 61%;
+        left: 64%;
         color: white;
         background-color: #791118;
         font-size: 11px;
         font-weight: 500;
         border: none;
-        padding: 7px 15px 7px 15px;
+        padding: 5px 15px 5px 15px;
         border-radius: 53px;
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0 10px 4px;
-        position: relative;
-        top: 1px;
-    }
-    .play__color {
-        font-size: 12px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 2px;
-        right: 2px
-    }
+    
     .background__image {
         border-radius: 14px
     }
 
 }
-
+@media screen and (max-width: 536px) {
+    .background__image__2 {
+        margin: -15px 30px 50px 30px;
+    }
+    .text-overlay-3 {
+        position: absolute;
+        top: 0%;
+        left: 9%;
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 8%;
+        left: 9%;
+        color: black;
+        font-size: 12px;
+        font-weight: 300;
+        max-width: 400px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        max-height: calc(1.5em * 2); 
+        line-height: 1.5em; 
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 35%;
+        left: 9%;
+    }
+}
 @media screen and (max-width: 530px) {
     li a {
         font-size: 18px;
@@ -1055,38 +1481,24 @@ li a:hover {
         margin-bottom: 5px;
     }
     .button__overlay {
-
+        margin-top: 0.1rem;
         position: absolute;
-        top: 65%;
-        left: 64%;
+        top: 57%;
+        left: 63%;
         color: white;
         background-color: #791118;
         font-size: 11px;
         font-weight: 500;
         border: none;
-        padding: 7px 15px 7px 15px;
+        padding: 5px 15px 5px 15px;
         border-radius: 53px;
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0 10px 0px;
-        position: relative;
-        top: 1px;
+    .play__button {
+        width: 25px;
     }
-    .play__color {
-        font-size: 12px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        bottom: 1px;
-        left: 1px
-    }
+
     .background__image {
         margin: 0rem 30px 50px 30px;
     }
@@ -1115,28 +1527,65 @@ li a:hover {
         left: 9%;
         font-size: 11px;
     }
+    .text-overlay-3 {
+        position: absolute;
+        top: -12%;
+        left: 9%;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 3%;
+        left: 9%;
+        color: black;
+        font-size: 12px;
+        font-weight: 300;
+        max-width: 380px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        max-height: calc(1.5em * 2); 
+        line-height: 1.5em; 
+    }
+    .background__image__2 {
+        border-radius: 10px;  
+        margin: -59px 30px 50px 30px;
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 35%;
+        left: 9%;
+    }
+   
 }
 @media screen and (max-width: 500px) {
 
     .button__overlay {
         position: absolute;
-        top: 64%;
-        left: 65%;
+        top: 59%;
+        left: 69%;
         color: white;
         background-color: #791118;
-        font-size: 8px;
+        font-size: 7px;
         font-weight: 500;
         border: none;
-        padding: 7px 20px 7px 20px;
+        padding: 5px 10px 5px 10px;
         border-radius: 53px;
         display: flex;
         align-items: center;
     } 
    
-    .ri-play-large-fill:before {
-        position: relative;
-        bottom: 1px;
-        right: 2px
+    .play__button {
+        width: 20px;
     }
     .background__image {
         margin: 0rem 30px 50px 30px;
@@ -1173,73 +1622,116 @@ li a:hover {
     .button__overlay {
         margin-top: -1.5rem;
         position: absolute;
-        top: 73%;
+        top: 70%;
         left: 69%;
         color: white;
         background-color: #791118;
         font-size: 6px;
         font-weight: 500;
         border: none;
-        padding: 7px 20px 7px 20px;
+        padding:  5px 10px 5px 10px;
         border-radius: 53px;
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0px 10px 0px;
-        position: relative;
-        top: 1px;
-    }
-    .play__color {
-        font-size: 9px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0px;
-        right: 2px;
-    }
 
+    .play__button {
+        width: 18px;
+    }
+    .text-overlay-3 {
+        position: absolute;
+        top: -12%;
+        left: 10%;
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        color: black;
+        font-size: 10px;
+        font-weight: 300;
+        max-width: 300px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        max-height: calc(1.5em * 2); 
+        line-height: 1.5em; 
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+    }
 }
-@media screen and (max-width: 434px) {
+@media screen and (max-width: 447px) {
     .button__overlay {
         margin-top: -1.5rem;
         position: absolute;
-        top: 73%;
-        left: 66%;
+        top: 69%;
+        left: 67%;
         color: white;
         background-color: #791118;
         font-size: 6px;
         font-weight: 500;
         border: none;
-        padding: 7px 20px 7px 20px;
+        padding:  5px 10px 5px 10px;
         border-radius: 53px;
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0px 10px 0px;
-        position: relative;
-        top: 1px;
+    .text-overlay-3 {
+        position: absolute;
+        top: -12%;
+        left: 10%;
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
     }
-    .play__color {
-        font-size: 8px;
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        color: black;
+        font-size: 10px;
+        font-weight: 300;
+        max-width: 300px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        max-height: calc(1.5em * 2); 
+        line-height: 1.5em; 
     }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 1px;
+    .background__image__2 {
+        border-radius: 10px;
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 27%;
+        left: 10%;
     }
 }
-
+@media screen and (max-width: 420px) {
+    .background__image__2 {
+        border-radius: 5px;
+    }
+}
 @media screen and (max-width: 396px) {
     .text-overlay-2 {
         left: 11%;
@@ -1269,40 +1761,62 @@ li a:hover {
     }
     
     .button__overlay {
+        margin-top: -1.5rem;
         position: absolute;
-        top: 70%;
-        left: 70%;
+        top: 69%;
+        left: 67%;
         color: white;
         background-color: #791118;
         font-size: 6px;
         font-weight: 500;
         border: none;
-        padding: 7px 10px 7px 10px;
+        padding:  5px 10px 5px 10px;
         border-radius: 53px;
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0px 10px 0px;
-        position: relative;
-        top: 1px;
-    }
-    .play__color {
-        font-size: 8px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        bottom: 1px;
-        left: 1px
-    }
+    
     .background__image {
         margin: 0rem 20px 50px 20px;
         border-radius: 10px;
+    }
+    .text-overlay-3 {
+        position: absolute;
+        top: -12%;
+        left: 10%;
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        color: black;
+        font-size: 8px;
+        font-weight: 300;
+        max-width: 300px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        max-height: calc(1.5em * 2); 
+        line-height: 1.5em; 
+    }
+    .background__image__2 {
+        margin: -59px 20px 50px 20px;
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        font-size: 8px;
     }
 }
 
@@ -1355,38 +1869,36 @@ li a:hover {
     .button__overlay {
         margin-top: -1.5rem;
         position: absolute;
-        top: 71%;
+        top: 69%;
         left: 67%;
         color: white;
         background-color: #791118;
-        font-size: 5px;
+        font-size: 6px;
         font-weight: 500;
         border: none;
-        padding: 5px 10px 5px 10px;
+        padding:  5px 10px 5px 10px;
         border-radius: 53px;
         display: flex;
         align-items: center;
     } 
-    .circle {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: white;
-        display: inline-block;
-        padding: 0px 0px 10px 0px;
-        position: relative;
-        top: 1px;
-    }
-    .play__color {
-        font-size: 9px;
-    }
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0;
-        right: 0;
-    }
-
 }    
+@media screen and (max-width: 344px) {
+    .button__overlay {
+        margin-top: -1.5rem;
+        position: absolute;
+        top: 66%;
+        left: 65%;
+        color: white;
+        background-color: #791118;
+        font-size: 6px;
+        font-weight: 500;
+        border: none;
+        padding:  5px 10px 5px 10px;
+        border-radius: 53px;
+        display: flex;
+        align-items: center;
+    } 
+}
 @media screen and (max-width: 327px) {
     .text-overlay-2 {
         left: 11%;
@@ -1408,7 +1920,6 @@ li a:hover {
     }
     
     .button__overlay {
-        margin-top: -1.5rem;
         position: absolute;
         top: 68%;
         left: 64%;
@@ -1422,6 +1933,9 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .play__button {
+        width: 16px;
+    }
 }
 @media screen and (max-width: 319px) {
     .text-overlay-2 {

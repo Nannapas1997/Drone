@@ -126,3 +126,24 @@ $(document).ready(function() {
   });
 
 });
+// Get the modal, button, and close elements
+const modal3 = document.getElementById("readMoreModal3");
+const readMoreBtn3 = document.querySelector(".read-more-btn-2");
+const closeModal3 = document.querySelector(".close-modal3");
+
+// Show the modal when the "อ่านเพิ่มเติม" button is clicked
+readMoreBtn3.addEventListener("click", function () {
+  modal3.style.display = "block";
+});
+
+// Close the modal when the close button is clicked
+closeModal3.addEventListener("click", function () {
+  modal3.style.display = "none";
+});
+
+// Close the modal when clicking outside the modal content
+window.addEventListener("click", function (event) {
+  if (event.target === modal3) {
+    modal3.style.display = "none";
+  }
+});
