@@ -1933,8 +1933,15 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+<<<<<<< HEAD
     .play__button {
         width: 16px;
+=======
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+>>>>>>> 6e4a70ae5b0429b5c365e8da325d8dad0a8d847c
     }
 }
 @media screen and (max-width: 319px) {
@@ -1980,6 +1987,11 @@ li a:hover {
         left: 11%;
         font-size: 9px;
     }
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
 @media screen and (max-width: 299px) {
     .text-overlay-2 {
@@ -2024,6 +2036,11 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
 @media screen and (max-width: 270px) {
     .text-overlay-2 {
@@ -2060,6 +2077,11 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
 @media screen and (max-width: 258px) {
     .text-overlay-2 {
@@ -2096,6 +2118,11 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
 @media screen and (max-width: 236px) {
     .text-overlay-2 {
@@ -2132,4 +2159,9 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
+    .ri-play-large-fill:before {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
